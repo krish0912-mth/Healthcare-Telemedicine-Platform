@@ -23,7 +23,7 @@ try{
 
 const res = await axios.get(
 
-"https://healthcare-telemedicine-platform.onrender.com/api/appointments/api/doctor",
+"https://healthcare-telemedicine-platform.onrender.com/api/appointments/doctor",
 
 {
 
