@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Prescription.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://healthcare-telemedicine-platform.onrender.com/";
 
 function Prescription(){
 
@@ -786,7 +786,7 @@ item.prescriptionFile && (
 
 <a
 
-href={`http://localhost:5000/${item.prescriptionFile}`}
+href={`https://healthcare-telemedicine-platform.onrender.com/${item.prescriptionFile}`}
 
 target="_blank"
 

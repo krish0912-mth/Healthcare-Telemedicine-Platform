@@ -22,7 +22,7 @@ const token = localStorage.getItem("token");
 
 const res = await axios.get(
 
-"http://localhost:5000/api/prescriptions/patient",
+"https://healthcare-telemedicine-platform.onrender.com/api/prescriptions/patient",
 
 {
 
@@ -221,7 +221,7 @@ pres.prescriptionFile && (
 
 <a
 
-href={`http://localhost:5000/${pres.prescriptionFile}`}
+href={`https://healthcare-telemedicine-platform.onrender.com/${pres.prescriptionFile}`}
 
 target="_blank"
 

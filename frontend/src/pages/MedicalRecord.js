@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./MedicalRecord.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://healthcare-telemedicine-platform.onrender.com/";
 
 function MedicalRecord() {
 

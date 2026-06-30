@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Emergency.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://healthcare-telemedicine-platform.onrender.com/";
 
 function Emergency() {
 

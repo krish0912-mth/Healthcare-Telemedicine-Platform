@@ -69,7 +69,7 @@ amount:Number(form.amount)
 
 const res = await axios.post(
 
-"http://localhost:5000/api/payment/create-order",
+"https://healthcare-telemedicine-platform.onrender.com/api/payment/create-order",
 
 paymentData,
 
@@ -144,7 +144,7 @@ console.log("PAYMENT RESPONSE",response);
 
 const verify = await axios.post(
 
-"http://localhost:5000/api/payment/verify",
+"https://healthcare-telemedicine-platform.onrender.com/api/payment/verify",
 
 response,
 

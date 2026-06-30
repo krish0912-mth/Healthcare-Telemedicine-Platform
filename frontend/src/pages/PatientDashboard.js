@@ -40,7 +40,7 @@ try{
 
 const res = await axios.get(
 
-"http://localhost:5000/api/patients/profile",
+"https://healthcare-telemedicine-platform.onrender.com/api/patients/profile",
 
 {
 
@@ -128,7 +128,7 @@ try{
 
 const res = await axios.post(
 
-"http://localhost:5000/api/patients/profile",
+"https://healthcare-telemedicine-platform.onrender.com/api/patients/profile",
 
 form,
 

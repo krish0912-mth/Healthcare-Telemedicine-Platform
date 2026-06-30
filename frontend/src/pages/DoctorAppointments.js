@@ -23,7 +23,7 @@ try{
 
 const res = await axios.get(
 
-"http://localhost:5000/api/appointments/doctor",
+"https://healthcare-telemedicine-platform.onrender.com/api/appointments/api/doctor",
 
 {
 
@@ -78,7 +78,7 @@ try{
 
 await axios.put(
 
-`http://localhost:5000/api/appointments/${id}/status`,
+`https://healthcare-telemedicine-platform.onrender.com/api/appointments/${id}/status`,
 
 {
 
@@ -129,7 +129,7 @@ const joinVideoCall = async (appointment) => {
 
         const response = await axios.get(
 
-            `http://localhost:5000/api/video/appointment/${appointment._id}`,
+            `https://healthcare-telemedicine-platform.onrender.com/api/video/appointment/${appointment._id}`,
 
             {
 

@@ -40,7 +40,7 @@ function VideoCall() {
 
     const res = await axios.post(
 
-      "http://localhost:5000/api/video/create",
+      "https://healthcare-telemedicine-platform.onrender.com/api/video/create",
 
       form,
 
@@ -98,7 +98,7 @@ const initializeCall = async () => {
 
     }
 
-    socketRef.current = io("http://localhost:5000");
+    socketRef.current = io("https://healthcare-telemedicine-platform.onrender.com");
 
     socketRef.current.emit(
 
