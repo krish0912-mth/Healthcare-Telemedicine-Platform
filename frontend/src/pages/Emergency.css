@@ -1,0 +1,411 @@
+/* ===========================
+   EMERGENCY PAGE
+=========================== */
+
+.emergency-page{
+
+min-height:100vh;
+
+padding:40px;
+
+background:#0f172a;
+
+color:white;
+
+}
+
+.emergency-page h1{
+
+font-size:38px;
+
+font-weight:700;
+
+margin-bottom:30px;
+
+}
+
+.emergency-card{
+
+max-width:650px;
+
+margin:auto;
+
+background:#1e293b;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+.emergency-card p{
+
+color:#cbd5e1;
+
+margin-bottom:20px;
+
+font-size:18px;
+
+}
+
+.emergency-card form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.emergency-card textarea{
+
+width:100%;
+
+min-height:150px;
+
+padding:15px;
+
+border:none;
+
+border-radius:12px;
+
+resize:none;
+
+font-size:16px;
+
+background:#334155;
+
+color:white;
+
+outline:none;
+
+}
+
+.emergency-card textarea::placeholder{
+
+color:#cbd5e1;
+
+}
+
+.emergency-card select{
+
+padding:15px;
+
+border:none;
+
+border-radius:12px;
+
+font-size:16px;
+
+background:#334155;
+
+color:white;
+
+outline:none;
+
+}
+
+/* ===========================
+   EMERGENCY LIST
+=========================== */
+
+.emergency-list{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+gap:25px;
+
+margin-top:30px;
+
+}
+
+.emergency-item{
+
+background:#1e293b;
+
+padding:22px;
+
+border-radius:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.35);
+
+transition:.3s;
+
+border-left:6px solid #ef4444;
+
+}
+
+.emergency-item:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.45);
+
+}
+
+.emergency-item h2{
+
+margin-bottom:12px;
+
+font-size:24px;
+
+color:#fff;
+
+}
+
+.emergency-item p{
+
+margin:8px 0;
+
+font-size:16px;
+
+color:#e2e8f0;
+
+line-height:1.5;
+
+}
+
+.emergency-actions{
+
+margin-top:18px;
+
+display:flex;
+
+gap:12px;
+
+flex-wrap:wrap;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.emergency-card button{
+
+padding:15px;
+
+border:none;
+
+border-radius:12px;
+
+font-size:17px;
+
+font-weight:600;
+
+cursor:pointer;
+
+background:#ef4444;
+
+color:white;
+
+transition:.3s;
+
+}
+
+.emergency-card button:hover{
+
+background:#dc2626;
+
+transform:translateY(-2px);
+
+}
+
+.accept-btn{
+
+padding:10px 20px;
+
+border:none;
+
+border-radius:10px;
+
+background:#2563eb;
+
+color:white;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.accept-btn:hover{
+
+background:#1d4ed8;
+
+}
+
+.complete-btn{
+
+padding:10px 20px;
+
+border:none;
+
+border-radius:10px;
+
+background:#16a34a;
+
+color:white;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.complete-btn:hover{
+
+background:#15803d;
+
+}
+
+/* ===========================
+   STATUS
+=========================== */
+
+.status{
+
+padding:6px 14px;
+
+border-radius:30px;
+
+font-weight:700;
+
+margin-left:8px;
+
+display:inline-block;
+
+}
+
+.status.pending{
+
+background:#facc15;
+
+color:#000;
+
+}
+
+.status.accepted{
+
+background:#3b82f6;
+
+color:white;
+
+}
+
+.status.completed{
+
+background:#22c55e;
+
+color:white;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.emergency-page{
+
+padding:20px;
+
+}
+
+.emergency-page h1{
+
+font-size:30px;
+
+text-align:center;
+
+}
+
+.emergency-card{
+
+padding:20px;
+
+}
+
+.emergency-item{
+
+padding:18px;
+
+}
+
+.emergency-item h2{
+
+font-size:20px;
+
+}
+
+.emergency-item p{
+
+font-size:15px;
+
+}
+
+.emergency-actions{
+
+flex-direction:column;
+
+}
+
+.accept-btn,
+.complete-btn{
+
+width:100%;
+
+padding:12px;
+
+font-size:16px;
+
+}
+
+.emergency-card button{
+
+width:100%;
+
+}
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#0f172a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#475569;
+
+border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#64748b;
+
+}
+

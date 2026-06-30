@@ -1,0 +1,507 @@
+/* ==========================
+   PAGE
+========================== */
+
+.prescription-page{
+
+padding:35px;
+
+animation:fadeIn .4s ease;
+
+}
+
+
+
+/* ==========================
+   CARD
+========================== */
+
+.prescription-card{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:22px;
+
+box-shadow:
+
+0 12px 35px rgba(15,23,42,.08);
+
+margin-bottom:35px;
+
+}
+
+.prescription-card h1{
+
+font-size:34px;
+
+font-weight:800;
+
+color:#0f172a;
+
+margin-bottom:8px;
+
+}
+
+.prescription-card p{
+
+color:#64748b;
+
+margin-bottom:25px;
+
+}
+
+
+
+/* ==========================
+   FORM
+========================== */
+
+.prescription-card form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.prescription-card select,
+
+.prescription-card input,
+
+.prescription-card textarea{
+
+width:100%;
+
+padding:15px;
+
+border-radius:15px;
+
+border:1px solid #dbe2ea;
+
+font-size:15px;
+
+outline:none;
+
+transition:.3s;
+
+}
+
+.prescription-card textarea{
+
+min-height:120px;
+
+resize:none;
+
+}
+
+.prescription-card select:focus,
+
+.prescription-card input:focus,
+
+.prescription-card textarea:focus{
+
+border-color:#2563eb;
+
+box-shadow:
+
+0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+
+
+/* ==========================
+   MEDICINE BOX
+========================== */
+
+.medicine-box{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(3,1fr)
+
+120px;
+
+gap:12px;
+
+margin-bottom:10px;
+
+}
+
+.medicine-box input{
+
+margin:0;
+
+}
+
+
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.add-btn,
+
+.submit-btn,
+
+.remove-btn{
+
+border:none;
+
+border-radius:12px;
+
+padding:13px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.add-btn{
+
+background:#2563eb;
+
+color:white;
+
+}
+
+.add-btn:hover{
+
+background:#1d4ed8;
+
+}
+
+.submit-btn{
+
+background:#16a34a;
+
+color:white;
+
+}
+
+.submit-btn:hover{
+
+background:#15803d;
+
+}
+
+.remove-btn{
+
+background:#ef4444;
+
+color:white;
+
+}
+
+.remove-btn:hover{
+
+background:#dc2626;
+
+}
+
+.submit-btn:disabled{
+
+background:#94a3b8;
+
+cursor:not-allowed;
+
+}
+
+
+
+/* ==========================
+   TITLE
+========================== */
+
+.prescription-page h2{
+
+font-size:30px;
+
+font-weight:800;
+
+margin-bottom:25px;
+
+color:#0f172a;
+
+}
+
+
+
+/* ==========================
+   LIST
+========================== */
+
+.prescription-list{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(330px,1fr));
+
+gap:25px;
+
+}
+
+.prescription-item{
+
+background:#fff;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:
+
+0 10px 30px rgba(15,23,42,.08);
+
+transition:.3s;
+
+}
+
+.prescription-item:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+
+0 18px 40px rgba(37,99,235,.18);
+
+}
+
+.prescription-item h3{
+
+margin-bottom:15px;
+
+font-size:22px;
+
+color:#2563eb;
+
+}
+
+.prescription-item p{
+
+margin:10px 0;
+
+color:#475569;
+
+}
+
+
+
+/* ==========================
+   MEDICINES
+========================== */
+
+.medicine-list{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+margin-top:15px;
+
+}
+
+.medicine-chip{
+
+background:#eff6ff;
+
+color:#1d4ed8;
+
+padding:8px 14px;
+
+border-radius:25px;
+
+font-size:14px;
+
+font-weight:600;
+
+}
+
+
+
+/* ==========================
+   FILE BUTTON
+========================== */
+
+.file-btn{
+
+display:inline-block;
+
+margin-top:18px;
+
+text-decoration:none;
+
+background:#16a34a;
+
+color:white;
+
+padding:12px 18px;
+
+border-radius:12px;
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+.file-btn:hover{
+
+background:#15803d;
+
+}
+
+
+
+/* ==========================
+   EMPTY
+========================== */
+
+.empty-box{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:
+
+0 8px 20px rgba(0,0,0,.06);
+
+font-size:18px;
+
+font-weight:600;
+
+}
+
+
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark-mode .prescription-page{
+
+background:#020617;
+
+}
+
+body.dark-mode .prescription-card,
+
+body.dark-mode .prescription-item,
+
+body.dark-mode .empty-box{
+
+background:#0f172a;
+
+border:1px solid #334155;
+
+}
+
+body.dark-mode .prescription-card h1,
+
+body.dark-mode .prescription-page h2{
+
+color:white;
+
+}
+
+body.dark-mode .prescription-card p,
+
+body.dark-mode .prescription-item p{
+
+color:#cbd5e1;
+
+}
+
+body.dark-mode .prescription-card input,
+
+body.dark-mode .prescription-card textarea,
+
+body.dark-mode .prescription-card select{
+
+background:#1e293b;
+
+border-color:#475569;
+
+color:white;
+
+}
+
+body.dark-mode .medicine-chip{
+
+background:#1e3a8a;
+
+color:#dbeafe;
+
+}
+
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.prescription-page{
+
+padding:20px;
+
+}
+
+.prescription-card{
+
+padding:25px;
+
+}
+
+.medicine-box{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(15px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}

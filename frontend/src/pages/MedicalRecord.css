@@ -1,0 +1,347 @@
+/* ==========================
+   Medical Record Page
+========================== */
+
+.record-page{
+    padding:30px;
+    min-height:100vh;
+    background:#f5f7fb;
+}
+
+/* ==========================
+   Header
+========================== */
+
+.pageHeader{
+    margin-bottom:25px;
+}
+
+.pageHeader h1{
+    font-size:32px;
+    color:#222;
+    margin-bottom:8px;
+    font-weight:700;
+}
+
+.pageHeader p{
+    color:#777;
+    font-size:16px;
+}
+
+/* ==========================
+   Search
+========================== */
+
+.recordSearch{
+    margin-bottom:25px;
+}
+
+.recordSearch input{
+    width:100%;
+    padding:14px 18px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+    background:#fff;
+}
+
+.recordSearch input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 12px rgba(37,99,235,.15);
+}
+
+/* ==========================
+   Form Card
+========================== */
+
+.record-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    margin-bottom:35px;
+}
+
+.record-card h2{
+    margin-bottom:20px;
+    color:#222;
+}
+
+.record-card form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.record-card input,
+.record-card textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.record-card textarea{
+    resize:none;
+    min-height:120px;
+}
+
+.record-card input:focus,
+.record-card textarea:focus{
+    border-color:#2563eb;
+}
+
+.record-card button{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:14px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.record-card button:hover{
+    background:#1d4ed8;
+}
+
+/* ==========================
+   Record Grid
+========================== */
+
+.record-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:25px;
+}
+
+/* ==========================
+   Record Card
+========================== */
+
+.record-item{
+    background:#fff;
+    border-radius:15px;
+    padding:22px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.record-item:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.recordTop{
+    margin-bottom:15px;
+}
+
+.recordTop h2{
+    color:#222;
+    font-size:22px;
+}
+
+.record-item p{
+    margin:12px 0;
+    color:#555;
+    line-height:1.6;
+}
+
+.record-item a{
+    display:inline-block;
+    margin-top:10px;
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.record-item a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================
+   Patient Info
+========================== */
+
+.patientInfo{
+    margin-top:18px;
+    padding-top:18px;
+    border-top:1px solid #eee;
+}
+/* ==========================
+   Loading
+========================== */
+
+.loadingBox{
+    width:100%;
+    text-align:center;
+    padding:60px 20px;
+    background:#fff;
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.loadingBox h2{
+    color:#2563eb;
+    font-size:24px;
+}
+
+/* ==========================
+   Error
+========================== */
+
+.errorBox{
+    width:100%;
+    padding:18px;
+    margin-bottom:25px;
+    border-radius:10px;
+    background:#fee2e2;
+    color:#dc2626;
+    text-align:center;
+    font-weight:600;
+}
+
+/* ==========================
+   Empty
+========================== */
+
+.emptyBox{
+    width:100%;
+    padding:60px 20px;
+    text-align:center;
+    background:#fff;
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.emptyBox h2{
+    color:#777;
+    font-size:24px;
+}
+
+/* ==========================
+   Scrollbar
+========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#b7b7b7;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#8d8d8d;
+}
+
+/* ==========================
+   Animation
+========================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.record-item{
+    animation:fadeIn .4s ease;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:992px){
+
+    .record-page{
+        padding:20px;
+    }
+
+    .record-list{
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    }
+
+}
+
+@media(max-width:768px){
+
+    .pageHeader h1{
+        font-size:28px;
+    }
+
+    .record-card{
+        padding:20px;
+    }
+
+    .record-list{
+        grid-template-columns:1fr;
+    }
+
+    .record-card input,
+    .record-card textarea,
+    .record-card button{
+        font-size:15px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .record-page{
+        padding:15px;
+    }
+
+    .pageHeader h1{
+        font-size:24px;
+    }
+
+    .pageHeader p{
+        font-size:14px;
+    }
+
+    .record-card{
+        padding:18px;
+    }
+
+    .record-item{
+        padding:18px;
+    }
+
+    .recordTop h2{
+        font-size:20px;
+    }
+
+    .record-item p{
+        font-size:14px;
+    }
+
+    .record-card button{
+        padding:12px;
+    }
+
+}

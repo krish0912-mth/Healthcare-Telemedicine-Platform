@@ -1,0 +1,79 @@
+/* Main Layout */
+
+
+.layout{
+
+display:flex;
+
+min-height:calc(100vh - 90px);
+
+background:#f8fafc;
+
+}
+
+
+
+/* Right Side Content */
+
+
+.main-content{
+
+flex:1;
+
+padding:20px 30px;
+
+overflow-x:hidden;
+
+transition:0.3s ease;
+
+}
+
+
+
+
+
+
+/* Dark Mode */
+
+
+body.dark-mode .layout{
+
+background:#020617;
+
+}
+
+
+
+body.dark-mode .main-content{
+
+background:#020617;
+
+}
+
+
+
+
+
+
+/* Mobile */
+
+
+@media(max-width:800px){
+
+
+.layout{
+
+flex-direction:column;
+
+}
+
+
+
+.main-content{
+
+padding:15px;
+
+}
+
+
+}
