@@ -42,7 +42,7 @@ try{
 
 const res = await axios.get(
 
-"https://healthcare-telemedicine-platform.onrender.com/api/appointments"
+"https://healthcare-telemedicine-platform.onrender.com/api/doctors"
 
 );
 
@@ -80,7 +80,7 @@ try{
 
 const res = await axios.get(
 
-"https://healthcare-telemedicine-platform.onrender.com/api/appointments",
+"https://healthcare-telemedicine-platform.onrender.com/api/appointments/patient",
 
 {
 
@@ -223,7 +223,7 @@ const startVideoCall = async (appointment) => {
 
         const response = await axios.post(
 
-            "https://healthcare-telemedicine-platform.onrender.com/api/appointments",
+            "https://healthcare-telemedicine-platform.onrender.com/api/video/create",
 
             {
 
