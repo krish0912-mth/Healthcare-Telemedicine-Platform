@@ -184,8 +184,6 @@ RAZORPAY_KEY_SECRET=YOUR_SECRET
 - Medical Records
 - Emergency Module
 
-(Add screenshots here)
-
 ---
 
 # 🚀 Future Enhancements
